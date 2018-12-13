@@ -1,7 +1,7 @@
 var CACHE_NAME = 'ereporter-chache-v-100';
 var filesToCache = [
-	'./images/icons/android-chrom-192x192.png',
-	'./images/icons/android-chrom-512x512.png',
+	'./images/icons/android-chrome-192x192.png',
+	'./images/icons/android-chrome-512x512.png',
 	'./images/icons/apple-touch-icon.png',
 	'./images/icons/browserconfig.xml',
 	'./images/icons/favicon-16x16.png',
