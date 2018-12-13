@@ -22,6 +22,7 @@ var filesToCache = [
 ];
 
 self.addEventListener('install', function(e){
+    console.log(filesToCache);
 	console.log('[EReporter - ServiceWorker] Install event fired.');
 	e.waitUntil(
 		caches.open(CACHE_NAME).then(function(cache){
