@@ -62,6 +62,6 @@ self.addEventListener('fetch', function(e){
 			return fetch(e.request).catch(function(e){
 				console.log('[EReporter - ServiceWorker] Fetch request failed!');
 			});
-		}));
+		});
 	);
 });
