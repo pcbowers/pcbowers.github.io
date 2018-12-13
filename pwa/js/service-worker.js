@@ -26,7 +26,7 @@ self.addEventListener('install', function(e){
 	e.waitUntil(
 		caches.open(CACHE_NAME).then(function(cache){
 			console.log('[EReporter - ServiceWorker] Caching app shell...');
-			return cache.addAll(filesToCache)
+			return cache.addAll(filesToCache);
             /*.then(function(){
 				self.skipWaiting();
 			}); */
