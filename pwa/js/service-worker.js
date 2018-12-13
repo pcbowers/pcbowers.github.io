@@ -1,5 +1,6 @@
 var CACHE_NAME = 'ereporter-chache-v-100';
 var filesToCache = [
+    '/',
     'index.html',
     'js/app.js',
 	'images/icons/android-chrome-192x192.png',
