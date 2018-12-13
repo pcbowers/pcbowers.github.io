@@ -52,7 +52,7 @@ self.addEventListener('activate', function(e){
 self.addEventListener('fetch', function(e){
 	console.log('[EReporter - ServiceWorker] Fetch event fired.', e.request.url);
 	e.respondWith(
-		caches.match(e.request).then(function(response {
+		caches.match(e.request).then(function(response){
 			if(response){
 				console.log('[ErReporter - ServiceWorker] Retrieving from cache...');
 				return response;
