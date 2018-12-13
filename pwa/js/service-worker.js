@@ -1,5 +1,7 @@
 var CACHE_NAME = 'ereporter-chache-v-100';
 var filesToCache = [
+    'index.html',
+    'js/app.js',
 	'images/icons/android-chrome-192x192.png',
 	'images/icons/android-chrome-512x512.png',
 	'images/icons/apple-touch-icon.png',
@@ -16,10 +18,7 @@ var filesToCache = [
 	'images/icons/icon-384x384.png',
 	'images/icons/icon-512x512.png',
 	'images/icons/mstile-150x150.png',
-	'images/icons/safari-pinned-tab.svg',
-	'js/app.js',
-	'index.html',
-	'manifest.json'
+	'images/icons/safari-pinned-tab.svg'
 ];
 
 self.addEventListener('install', function(e){
@@ -27,9 +26,10 @@ self.addEventListener('install', function(e){
 	e.waitUntil(
 		caches.open(CACHE_NAME).then(function(cache){
 			console.log('[EReporter - ServiceWorker] Caching app shell...');
-			return cache.addAll(filesToCache).then(function(){
+			return cache.addAll(filesToCache)
+            /*.then(function(){
 				self.skipWaiting();
-			});
+			}); */
 		})
 	);
 });
