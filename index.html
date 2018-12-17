@@ -1,13 +1,133 @@
+<?php
+//header( 'Location: https://pcbowers.com/projects/attendance/sign-in.php' ) ;
+?>
 <html>
-    <header>
-        <title>
-            PCBowers' Test Website
-        </title>
-    </header>
-    <body>
-        <h3>Current Test Projects:</h3>
-        <ul>
-            <li><a href="pwa/index.html">Progressive Web App</a></li>
+<header>
+    <title>
+        PCBowers' Test Website
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        html, body {
+            position: relative;
+            background: #f2e9e0;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .center-h {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .center-v {
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+        }
+
+        #title {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .title-logo {
+            display: none;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            margin-bottom: -9px;
+        }
+
+        #subtitle {
+            text-align: center;
+            margin-top: -5px;
+            margin-bottom: 50px;
+            color: #3e3d3d;
+        }
+
+        a {
+            color: #355285;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        .header {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .linklist {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .linklist>li {
+            margin-bottom: 20px;
+        }
+
+        .linklist>li>a {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .header+div {
+            width: 80%;
+        }
+
+        @media(min-width: 500px){
+            .header+div {
+                width: 50%;
+            }
+        }
+    </style>
+</header>
+<body>
+    <div class="center center-h" style="width: 80%;">
+        <h1 id="title">PCBowers Test Website &copy; 2018</h1>
+    </div>
+    <div class="center center-h" style="width: 50%;">
+        <h3 id="subtitle">Below are the following projects that are created and hosted on this website by Christopher Bowers (me). Fully designed and developed by myself, though certainly influenced by Google research.</h3>
+    </div>
+
+    <h2 class="header">FEATURE PROJECTS</h3>
+        <div class="center center-h">
+        <ul class="linklist">
+            <li>
+                <a href="pwa/index.html">Progressive Web App</a>
+                <div>A test of my first progressive web app and its possibilities.</div>
+            </li>
         </ul>
-    </body>
+        </div>
+
+    <h2 class="header">TEST PROJECTS</h3>
+        <div class="center center-h">
+        <ul class="linklist">
+            <li>
+                <a href="pwa/index.html">Progressive Web App</a>
+                <div>A test of my first progressive web app and its possibilities.</div>
+            </li>
+        </ul>
+        </div>
+</body>
 </html>
